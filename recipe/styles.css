@@ -16,3 +16,10 @@ text-transform: uppercase;
     width:600px;
     float:left;
 }
+
+.right {
+    width:600px;
+    float:left;
+    margin-left:30px;
+    margin-top: ;
+}
