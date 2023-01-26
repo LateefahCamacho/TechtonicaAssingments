@@ -13,7 +13,7 @@ text-transform: uppercase;
 }
 
 .left {
-    width:600px;
+    margin-right:60px;
     float:left;
 }
 
@@ -21,5 +21,11 @@ text-transform: uppercase;
     width:600px;
     float:left;
     margin-left:30px;
-    margin-top: ;
+    margin-top:0;
+}
+.block {
+    display: block;
+}
+.text {
+  visibility:visible;
 }
