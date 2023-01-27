@@ -1,4 +1,4 @@
-const button = document.getElementsByClassName("noteButton")
+const button = document.getElementsByClassName("noteButton").addEventlistener("click", notes)
   
 
 function notes(){
