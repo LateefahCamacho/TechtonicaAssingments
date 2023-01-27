@@ -51,6 +51,6 @@ img {
 }
 @media (min-width: 1200px) {
     body {
-        background-color:green ;
+        background-color: pink ;
     }
 }
