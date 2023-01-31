@@ -1,18 +1,20 @@
 
 *{
+
     margin: 0;
     padding:0;
-    font-family:
+    font-family: 'Oxygen', sans-serif;
+    box-sizing:border-box;
 }
 
 body{
-    background: plum;
+    background-color:red;
 }
 
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url();
+    background-image: url(https://lh3.googleusercontent.com/a/AEdFTp74wwfExC1zjklo2hvw_zqEQRkTVcxi7lFSQ176=s576-p-rw-no);
     background-size: cover;
     background-position: center;
 }
