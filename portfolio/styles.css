@@ -7,8 +7,14 @@
 }
 
 body{
-    background: #080808;
+    
+    background:black;
     color:#fff;
+}
+h1{
+    font-size: xx-large;
+    padding:40px;
+    
 }
 
 #header{
@@ -17,6 +23,25 @@ body{
     background-image: url(images/portfolio_profile.png);
     background-size:auto;
     background-repeat: no-repeat;
-    background-position: center;
-    font-size:xx-large
+    background-position:right top;
+    font-size:large;
+}
+.container{
+    padding:10px 10%;
+}
+nav{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a {
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
 }
