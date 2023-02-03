@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lateefah portfolio</title>
     <link rel="stylesheet" href = "styles.css">
+    <script src="https://kit.fontawesome.com/fde4bd129d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id = "header"> 
         <div class="container">
+
             <nav>
                 <ul>
                     <li><a href = "#">Home</a></li>
@@ -17,12 +19,17 @@
                     <li><a href = "#">Portfolio</a></li>
                 </ul>
             </nav>
+            <div class = "header-container">
+                
+            
           <div class="header-text">
             <p>Software Engineer in Training</p>
             <h1>Hi , I'm <span>Lateefah </span><br>Camacho</h1>
           </div>
+          <img src="/images/portfolio_profile.png " alt ="picture of woman">
         </div>
     </div>
+</div>
     <!---------------------------about--------->
     <div id="about">
         <div class="container">
@@ -32,19 +39,71 @@
                     </div>
                     <div class="about-col-2">
                      <h1 class = "sub-title">About Me</h1>
-                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe ea totam explicabo iusto deleniti repellendus repellat assumenda quaerat iure, consequatur, voluptate distinctio quae voluptatum impedit veritatis beatae. Laborum, eius fugit.
+                     <p class = "bio">I'm lateefah Camacho and my pronouns are she/ her 
+                     Im currently trainning to become a software engineer with Techtonica a non profit organization that helps women and non binary adults with low incomes BridgeTheTechGap.
                     
                      </p>
                     <div class="tab-titles">
-                    <p class = "tab-links active-link">Skills</p>
-                    <p class = "tab-links">Experience</p>
-                    <p class = "tab-links">Education</p>
+                    <p class = "tab-links active-link" onclick ="opentab('skills')">Skills</p>
+                    <p class = "tab-links"onclick ="opentab('Experience')">Experience</p>
+                    <p class = "tab-links"onclick ="opentab('Education')">Education</p>
                 </div>
+                <div class="tab-contents active-tab" id = "skills">
+                  <ul>
+                    <li><span>Css</span><br>Web applications</li>
+                    <li><span>Css</span><br>Design</li>
+                    <li><span>Css</span><br>Web Interface</li>
+                  </ul>
+                </div>
+                <div class="tab-contents" id=" Experience">
+                    <ul>
+                      <li><span>Ux/Ui</span><br>Web applications</li>
+                      <li><span>Css</span><br>Design</li>
+                      <li><span>html</span><br>Web Interface</li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id = "Education">
+                    <ul>
+                      <li><span>CIs</span><br>Web applications</li>
+                      <li><span>HTML</span><br>Design</li>
+                      <li><span>Js</span><br>Web Interface</li>
+                    </ul>
+                  </div>
+                
                 </div>
             </div>
         </div>
 
     </div>
+   <!-----------------Contact----------->
+    <div id = "contact">
+        <div class="container">
+         <div class="row">
+             <div class="contact-left">
+                 <h2 class = "sub-title">Contact Me</h2>
+                 <p> <i class="fa-solid fa-paper-plane"></i> contact@me.com</p>
+                 <p>phoneNumber</p>
+                 <div class="social-icons">
+                     <a href = "https://www.linkedin.com/in/lateefah-camacho-941995259/"><i class= "fa-brands fa-linkedin-in"></i></a>
+                 </div>
+             </div>
+              <div class="classcontact-right">
+                <div class="contact-right">
+                    <form>
+                    <input type = "text" name = "Name" placeholder = "Your Name" required>
+                    <input type = "email" name = "email" placeholder = "Your Email" pattern=".+@globex\.com" required>
+                    <textarea name = "Message" rows= "6" placeholder = "Your Message"></textarea>
+                    <button type = "submit" class = "btn btn2"> Submit</button>
+                </form>
+                 </div>
+              </div>
+         </div>
+        </div>
 
+     </div>
+
+     
+    
+      <script src = "script.js"></script>
 </body>
 </html>
