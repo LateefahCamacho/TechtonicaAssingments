@@ -78,3 +78,11 @@ body{
 .stats p:nth-last-child(1) {
 margin-left: 50%;
 }
+button {
+    width: 150px;
+    padding: 15px 0;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
