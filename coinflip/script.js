@@ -9,12 +9,18 @@ function flipCoin(){
         drawTails(400, 400 , "silver");
     }
 }
-function drawHeads() {
-
+function drawHeads(xloc, yloc, color) {
+ c.beginPath();
+ c.fillStyle = color;
+ c.strokeStyle = "Black";
+ c.arc(xloc, yloc,100, 0 , 2* Math.PI);
+ c.fill();
+ c.stroke();
+ c.closepath();
 }
 
 
 
-function drawTails() {
+function drawTails(xloc, yloc, color) {
 
 }
