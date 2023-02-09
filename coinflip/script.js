@@ -10,7 +10,7 @@ function flipCoin(){
     }
 }
 function drawHeads(xloc, yloc, color) {
-  c.clearRec()  
+ c.clearRec(0, 0, W, H);  
  c.beginPath();
  c.fillStyle = color;
  c.strokeStyle = "Black";
@@ -27,6 +27,7 @@ function drawHeads(xloc, yloc, color) {
 
 
 function drawTails(xloc, yloc, color) {
+    c.clearRec(0, 0, W, H);
     c.beginPath();
     c.fillStyle = color;
     c.strokeStyle = "Black";
