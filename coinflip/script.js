@@ -1,13 +1,15 @@
 function flipCoin(){
-    //declare variable flip; assign random number: 0-1
-    const flipCoin = Math.floor(Math.random() * 2)
-    //0 = heads; 1 = tails;
-    console.log(flipCoin)
-    //log flip to console
-    //if/else statement
-}
+    let flip = Math.floor(Math.random() * 2)
+    console.log(flip);
 
-function drawheads() {
+    if(flip === 0 ) {
+        drawHeads(200 , 200, "gold");
+    }
+    else {
+        drawTails(400, 400 , "silver");
+    }
+}
+function drawHeads() {
 
 }
 
