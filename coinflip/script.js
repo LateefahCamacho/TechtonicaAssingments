@@ -17,10 +17,24 @@ function drawHeads(xloc, yloc, color) {
  c.fill();
  c.stroke();
  c.closepath();
+ // Draw Black H on the coin
+  c.fillStyle = "black";
+  c.font = "72px Arial";
+  c.fillText("H", xLoc, yLoc);
 }
 
 
 
 function drawTails(xloc, yloc, color) {
-
+    c.beginPath();
+    c.fillStyle = color;
+    c.strokeStyle = "Black";
+    c.arc(xloc, yloc,100, 0 , 2* Math.PI);
+    c.fill();
+    c.stroke();
+    c.closepath();
+    // Draw Black H on the coin
+     c.fillStyle = "black";
+     c.font = "72px Arial";
+     c.fillText("T", xLoc, yLoc);
 }
