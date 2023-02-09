@@ -10,6 +10,7 @@ function flipCoin(){
     }
 }
 function drawHeads(xloc, yloc, color) {
+  c.clearRec()  
  c.beginPath();
  c.fillStyle = color;
  c.strokeStyle = "Black";
