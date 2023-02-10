@@ -27,22 +27,4 @@ flipBtn.addEventListener("click",() =>{
     disableButton();
 });
 
-function updateStats(){
-    document.querySelector("#heads-count").textContent = `Heads: ${heads}`;
-    document.querySelector("#tails-count").textContent = `Tails: ${tails}`;
-}
-
-function disableButton(){
-    flipBtn.disabled = true;
-    setTimeout(function(){
-        flipBtn.disabled = false;
-    },3000);
-}
-
-resetBtn.addEventListener("click",() =>{
-    coin.style.animation = "none";
-    heads = 0;
-    tails = 0;
-    updateStats();
-});
 
