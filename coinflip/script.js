@@ -19,7 +19,7 @@ flipBtn.addEventListener("click",() =>{
     }
     else {
         setTimeout(function(){
-            coin.style.annimation = "spin-tails 3s forwards";
+            coin.style.animation = "spin-tails 3s forwards";
         }, 100);
         tails++
     }
@@ -27,4 +27,20 @@ flipBtn.addEventListener("click",() =>{
     disableButton();
 });
 
+function updateStats(){
+    document.querySelector("#heads-count").textContent = `Heads: ${heads}`;
+    document.querySelector("#tails-count").textContent = `Tails: ${tails}`;
+}
+ function disableButton(){
+    flipBtn.disable = true;
+    setTimeout(function (){
+        flipBtn.disable = false;
+    }, 3000);
+ }
 
+ resetBtn.addEventListener("click", ()=>{
+    coin.style.animation = "none";
+    heads = 0;
+    tails =0;
+    updateStats()
+ });
